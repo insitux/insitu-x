@@ -3,7 +3,8 @@
     {
       "name": "Message Board",
       "prefix": "mboard",
-      "sourceUrl": "https://gist.githubusercontent.com/insitux/4eb62f4cf1ec8e83c393bb7d39f838ef/raw"
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/4eb62f4cf1ec8e83c393bb7d39f838ef/raw/message-board.ix",
+      "offerHttp": true
     },
     {
       "name": "Formula Guessing Game",
@@ -19,6 +20,12 @@
       "name": "blackshibe's script",
       "prefix": "blackshibe",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/8aff106396142db90b5a7806a98bdcfd/raw/blackshibe.ix"
+    },
+    {
+      "name": "Error test",
+      "prefix": "error",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/7fc358ea3f53db88aec0e70af8735b0d/raw",
+      "offerHttp": true
     }
   ]
 }

@@ -22,6 +22,7 @@ type AppEntry = {
   name: string;
   prefix: string;
   sourceUrl: string;
+  offerHttp?: boolean;
 };
 
 type Directory = { apps: AppEntry[] };

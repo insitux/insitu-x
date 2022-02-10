@@ -33,6 +33,14 @@ app.use(async (req, res, next) => {
   const prefix = req.url.match(/\/(.+?)(?:\/|$)/)?.[1];
   const app = readDirectory().apps.find(a => a.prefix == prefix);
   if (app) {
+    if (!app.offerHttp) {
+      res
+        .status(418)
+        .send(
+          `Application '${prefix}' responds only to Discord bot invocation.`,
+        );
+      return;
+    }
     const invocation: Invocation = {
       app: prefix!,
       where: req.method,
@@ -65,10 +73,12 @@ app.use(async (req, res, next) => {
 
 app.get("/", (req: Request, res: Response) => {
   const { apps } = readDirectory();
-  const lis = apps.map(
-    app =>
-      `<li><a href="${app.sourceUrl}">!${app.prefix} &ndash; ${app.name}</a></li>`,
-  );
+  const lis = apps.map(app => {
+    const webUrl = app.offerHttp
+      ? ` | <a href="/${app.prefix}">webpage</a>`
+      : "";
+    return `<li>!${app.prefix} &ndash; ${app.name}<br><a href="${app.sourceUrl}">source</a>${webUrl}</li>`;
+  });
   res.send(tokenReplacedHtml("index", "list", lis.join("")));
 });
 
