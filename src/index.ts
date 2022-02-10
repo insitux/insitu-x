@@ -1,8 +1,13 @@
 import express, { Application, Request, Response } from "express";
 import cors from "cors";
-import { json, urlencoded } from "body-parser";
+import { json, urlencoded, text } from "body-parser";
 import session from "express-session";
-import { handleInvocation, Invocation, readDirectory } from "./app-engine";
+import {
+  handleAppInvocation,
+  handleInvocation,
+  Invocation,
+  readDirectory,
+} from "./app-engine";
 import { readFileSync } from "fs";
 
 const app: Application = express();
@@ -16,18 +21,55 @@ app.use(
     saveUninitialized: true,
   }),
 );
+app.use(text({ type: "*/*" }));
 app.use(urlencoded({ extended: false }));
+
+const tokenReplacedHtml = (file: string, token: string, replacement: string) =>
+  readFileSync(`www/${file}.html`)
+    .toString()
+    .replace(`<!--${token}-->`, replacement);
+
+app.use(async (req, res, next) => {
+  const prefix = req.url.match(/\/(.+?)(?:\/|$)/)?.[1];
+  const app = readDirectory().apps.find(a => a.prefix == prefix);
+  if (app) {
+    const invocation: Invocation = {
+      app: prefix!,
+      where: req.method,
+      channel: req.url,
+      source: "web",
+      input: typeof req.body == "string" ? req.body : "",
+      who: req.ip.toString(),
+    };
+    console.log(JSON.stringify(invocation));
+    const invocationResult = await handleAppInvocation(app, invocation);
+    if (!invocationResult) {
+      res.status(418).send(`No application '${invocation.app}'`);
+      return;
+    }
+    const { output, errorOutput } = invocationResult;
+    if (errorOutput.length) {
+      const errors = errorOutput
+        .map(({ type, text }) =>
+          type == "message" ? `<m>${text}</m>` : `<e>${text}</e>`,
+        )
+        .join("");
+      res.send(tokenReplacedHtml("error", "errors", errors));
+    } else {
+      res.send(output);
+    }
+  } else {
+    next();
+  }
+});
+
 app.get("/", (req: Request, res: Response) => {
   const { apps } = readDirectory();
   const lis = apps.map(
     app =>
       `<li><a href="${app.sourceUrl}">!${app.prefix} &ndash; ${app.name}</a></li>`,
   );
-  res.send(
-    readFileSync("index.html")
-      .toString()
-      .replace("<!--list-->", lis.join("\n    ")),
-  );
+  res.send(tokenReplacedHtml("index", "list", lis.join("")));
 });
 
 app.post("/", async (req: Request, res: Response) => {

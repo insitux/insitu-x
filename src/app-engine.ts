@@ -40,7 +40,7 @@ type DoneInvocation = {
 export async function handleInvocation(
   invocation: Invocation,
 ): Promise<DoneInvocation | null> {
-  const { app: prefix, source, where, channel, who, input } = invocation;
+  const { app: prefix, input } = invocation;
   console.log(invocation);
 
   if (prefix == "repl") {
@@ -52,6 +52,14 @@ export async function handleInvocation(
   if (!app) {
     return null;
   }
+  return await handleAppInvocation(app, invocation);
+}
+
+export async function handleAppInvocation(
+  app: AppEntry,
+  invocation: Invocation,
+): Promise<DoneInvocation> {
+  const { source, where, channel, who, input } = invocation;
   try {
     const sourceResponse = await fetch(app.sourceUrl);
     if (!sourceResponse.ok) {

@@ -73,7 +73,7 @@ export function getInvoker(id: string, code: string) {
       console.log(e);
     }
     const toReturn = {
-      output: state.output,
+      output: state.output.slice(0, -1), //Remove trailing \n
       errorOutput,
     };
     state.output = "";

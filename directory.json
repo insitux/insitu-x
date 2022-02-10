@@ -1,6 +1,11 @@
 {
   "apps": [
     {
+      "name": "Message Board",
+      "prefix": "mboard",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/4eb62f4cf1ec8e83c393bb7d39f838ef/raw"
+    },
+    {
       "name": "Formula Guessing Game",
       "prefix": "fgame",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/ee5d48c12fe35708e8ffcfbf67c14d52/raw/formula-guessing-game.ix"
