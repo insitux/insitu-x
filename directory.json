@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "Formula Guessing Game",
+      "prefix": "fgame",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/ee5d48c12fe35708e8ffcfbf67c14d52/raw/formula-guessing-game.ix"
+    },
+    {
+      "name": "Minesweeper",
+      "prefix": "ms",
+      "sourceUrl": "https://raw.githubusercontent.com/Mistrustfully/insitux-ms/main/main.ix"
+    },
+    {
+      "name": "blackshibe's script",
+      "prefix": "blackshibe",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/8aff106396142db90b5a7806a98bdcfd/raw/blackshibe.ix"
+    }
+  ]
+}

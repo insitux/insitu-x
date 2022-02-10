@@ -1,0 +1,4 @@
+run = "node out/index.js"
+
+[nix]
+channel = "stable-21_11"

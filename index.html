@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Insitu-x FaaS</title>
+  </head>
+  <body class="pb-6">
+    <div class="section content">
+      <div class="container is-max-desktop">
+        <h1 class="title is-2">Insitu-x</h1>
+        <h2 class="subtitle is-5">
+          Free Insitux FaaS platform for Discord bots and web apps
+        </h2>
+        <a href="https://discord.gg/w3Fc4YZ9Qw">
+          <img
+            src="https://discord.com/api/guilds/877823554274590741/widget.png?style=banner2"
+            alt="Discord invite"
+            style="height: 3rem"
+          />
+        </a>
+        <p>
+          Visit the Discord server to discuss Insitux, and have your own Insitux
+          code deployed as a Discord bot handler and/or web-app.
+        </p>
+        <p>
+          Use this
+          <a
+            href="https://discord.com/api/oauth2/authorize?client_id=884405006290276382&permissions=68608&scope=bot"
+            >Insitux Discord Bot invite</a
+          >
+          if you'd like to use apps in your own server. It can also run Insitux
+          code directly in codeblocks.
+        </p>
+        <h4 class="title is-6">How it works</h4>
+        <p>
+          The Discord bot picks up either Insitux codeblocks or valid
+          application prefixes. If a codeblock it will immediately execute the
+          code. If a prefix it calls the POST API sat on the same URL you are
+          reading now, downloads the app's latest source code, and invokes its
+          handler function. The bot then responds to the original message with
+          whatever the handler function returns.
+        </p>
+        <h3 class="title is-5">Currently deployed apps</h3>
+        <p>
+          Apps will either respond to Discord messages or visiting their
+          endpoint on this website.
+        </p>
+        <p>
+          To invoke in Discord, use their prefix in a server with the Insitux
+          Discord Bot present, e.g. "!app-name [message to send to the app]"
+        </p>
+        <p>
+          To invoke their GET/POST handler, visit
+          <a href="#">https://insitux.repl.co/app-name</a>
+          in your browser.
+        </p>
+        <ul>
+          <!--list-->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

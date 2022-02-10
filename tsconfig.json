@@ -1,0 +1,16 @@
+{
+  "include": ["src/*.ts"],
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["ESNext", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "out",
+    "strict": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+  }
+}
