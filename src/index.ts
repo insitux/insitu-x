@@ -43,8 +43,8 @@ app.use(async (req, res, next) => {
     }
     const invocation: Invocation = {
       app: prefix!,
-      where: req.method,
-      channel: req.url,
+      channel: req.method,
+      where: req.url,
       source: "web",
       input: typeof req.body == "string" ? req.body : "",
       who: req.ip.toString(),
