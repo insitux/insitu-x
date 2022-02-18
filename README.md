@@ -23,3 +23,7 @@
 </table>
 
 - [Repository for insitux.repl.co](https://github.com/insitux/insitu-x)
+
+Pseudo-FaaS platform for apps which can interact via Discord and the web simultaneously!  
+Apps are written in Insitux, a new, smart scripting language.  
+Join the 220+ member Discord server to learn more: https://discord.gg/w3Fc4YZ9Qw

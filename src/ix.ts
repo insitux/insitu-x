@@ -42,7 +42,10 @@ function invoke(state: UserState, call: InvokeCall) {
   const ctx: Ctx = {
     get: key => get(state, key),
     set: (key, val) => set(state, key, val),
-    exe: (name, args) => nullRet,
+    exe: (name, args) => ({
+      kind: "err",
+      err: `Operation ${name} doesn't exist`,
+    }),
     env: state.env,
     print(str, withNewLine) {
       state.output += str + (withNewLine ? "\n" : "");

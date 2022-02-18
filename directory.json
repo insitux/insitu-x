@@ -7,6 +7,12 @@
       "offerHttp": true
     },
     {
+      "name": "Deadline live map",
+      "prefix": "deadline-live",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/fad6beaf05d1f6679efeba823f131bd6/raw",
+      "offerHttp": true
+    },
+    {
       "name": "Formula Guessing Game",
       "prefix": "fgame",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/ee5d48c12fe35708e8ffcfbf67c14d52/raw/formula-guessing-game.ix"
@@ -17,9 +23,21 @@
       "sourceUrl": "https://raw.githubusercontent.com/Mistrustfully/insitux-ms/main/main.ix"
     },
     {
+      "name": "HTTP request viewer",
+      "prefix": "http",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/62df130a1260dd5f3c1063adf1ce39e1/raw",
+      "offerHttp": true
+    },
+    {
       "name": "blackshibe's script",
       "prefix": "blackshibe",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/8aff106396142db90b5a7806a98bdcfd/raw/blackshibe.ix"
+    },
+    {
+      "name": "Show Insitux version",
+      "prefix": "version",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/c148d9aeeb2a5bd6eaf29dfcc1dce0c8/raw",
+      "offerHttp": true
     },
     {
       "name": "Error test",
