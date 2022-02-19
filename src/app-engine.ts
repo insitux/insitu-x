@@ -56,25 +56,50 @@ export async function handleInvocation(
   return await handleAppInvocation(app, invocation);
 }
 
+type CacheEntry<T> = { when: number; data: T };
+const cache = new Map<string, CacheEntry<string>>();
+const cacheGet = (key: string) => {
+  if (cache.has(key)) {
+    const entry = cache.get(key)!;
+    if (entry.when + 10_000 < Date.now()) {
+      cache.delete(key);
+    } else {
+      return entry.data;
+    }
+  }
+};
+const cacheSet = (key: string, data: string) => {
+  cache.set(key, { when: Date.now(), data });
+};
+
+const err = (text: string) =>
+  <DoneInvocation>{
+    output: "",
+    errorOutput: [{ type: "message", text }],
+  };
+
 export async function handleAppInvocation(
   app: AppEntry,
   invocation: Invocation,
 ): Promise<DoneInvocation> {
   const { source, where, channel, who, input } = invocation;
+
   try {
-    const sourceResponse = await fetch(app.sourceUrl);
-    if (!sourceResponse.ok) {
-      return {
-        output: "",
-        errorOutput: [
-          {
-            type: "message",
-            text: `Status code ${sourceResponse.status} when fetching "${app.name}" source`,
-          },
-        ],
-      };
+    let code = cacheGet(app.sourceUrl);
+
+    //If not already cached, download again
+    if (!code) {
+      console.log(`Downloading ${app.prefix}`);
+      const sourceResponse = await fetch(app.sourceUrl);
+      if (!sourceResponse.ok) {
+        return err(
+          `Status code ${sourceResponse.status} when fetching "${app.name}" source`,
+        );
+      }
+      code = await sourceResponse.text();
+      cacheSet(app.sourceUrl, code);
     }
-    const code = await sourceResponse.text();
+
     const { result: initResult, closure } = getInvoker(app.prefix, code);
     if (initResult.errorOutput.length) {
       return initResult;
@@ -95,14 +120,6 @@ export async function handleAppInvocation(
     return callResult;
   } catch (e) {
     console.log(e);
-    return {
-      output: "",
-      errorOutput: [
-        {
-          type: "message",
-          text: `Error when fetching source for app \"${app.name}\"`,
-        },
-      ],
-    };
+    return err(`Error when fetching source for app \"${app.name}\"`);
   }
 }
