@@ -2,7 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { Val } from "insitux/dist/types";
 
 export type UserState = {
-  vars: Map<string, Val>;
+  vars: {[key: string]: Val};
   output: string;
   env: { funcs: {}; vars: {}; lets: [] };
   time: number;
@@ -19,7 +19,7 @@ export function stateForName(name: string): UserState {
   const path = pathForName(name);
   if (!existsSync(path)) {
     const state = <UserState>{
-      vars: new Map(),
+      vars: {},
       output: "",
       env: { funcs: {}, vars: {}, lets: [] },
       time: new Date().getTime(),

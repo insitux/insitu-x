@@ -14,14 +14,14 @@ type InvokeCall =
 const startTime = Date.now();
 
 function get(state: UserState, key: string): ValOrErr {
-  if (!state.vars.has(key)) {
+  if (!(key in state.vars)) {
     return { kind: "err", err: `"${key}" not found` };
   }
-  return { kind: "val", value: state.vars.get(key)! };
+  return { kind: "val", value: state.vars[key]! };
 }
 
 function set(state: UserState, key: string, val: Val) {
-  state.vars.set(key, val);
+  state.vars[key] = val;
   return undefined;
 }
 
