@@ -1,5 +1,5 @@
 import { InvokeOutput, invoker } from "insitux";
-import { Ctx, ExternalFunction, Val, ValOrErr } from "insitux/dist/types";
+import { Ctx, ExternalFunctions, Val, ValOrErr } from "insitux/dist/types";
 import { functionInvoker } from "insitux/dist/invoker";
 import { saveState, stateForName, UserState } from "./user-state";
 
@@ -29,16 +29,15 @@ const nullVal: Val = { t: "null", v: undefined };
 const nullRet: ValOrErr = { kind: "val", value: nullVal };
 
 function invoke(state: UserState, call: InvokeCall) {
-  const functions: ExternalFunction[] = [
-    {
-      name: "uptime",
+  const functions: ExternalFunctions = {
+    uptime: {
       definition: {},
       handler: params => ({
         kind: "val",
         value: { t: "num", v: Date.now() - startTime },
       }),
     },
-  ];
+  };
   const ctx: Ctx = {
     get: key => get(state, key),
     set: (key, val) => set(state, key, val),
@@ -53,7 +52,7 @@ function invoke(state: UserState, call: InvokeCall) {
     functions,
     loopBudget: 1e4,
     rangeBudget: 1e4,
-    callBudget: 1e3,
+    callBudget: 5e3,
     recurBudget: 1e4,
   };
 
@@ -67,7 +66,7 @@ export function getInvoker(id: string, code: string) {
   const closure = (call: InvokeCall) => {
     let errorOutput: InvokeOutput = [];
     try {
-      errorOutput = invoke(state, call);
+      errorOutput = invoke(state, call).output;
     } catch (e) {
       errorOutput.push({
         type: "message",
