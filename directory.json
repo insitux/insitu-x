@@ -13,12 +13,22 @@
       "offerHttp": true
     },
     {
+      "name": "Royal Game of Ur",
+      "prefix": "ur",
+      "sourceUrl": "https://gist.githubusercontent.com/phunanon/1e0b75f9619f67c4a9d91e8593bb5016/raw"
+    },
+    {
       "name": "Formula Guessing Game",
       "prefix": "fgame",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/ee5d48c12fe35708e8ffcfbf67c14d52/raw/formula-guessing-game.ix"
     },
     {
-      "name": "Minesweeper",
+      "name": "Tic-Tac-Toe",
+      "prefix": "ttt",
+      "sourceUrl": "https://gist.githubusercontent.com/phunanon/aa90672fed7e5d961d1a54f10aeb624b/raw"
+    },
+    {
+      "name": "Minesweeper (unfinished)",
       "prefix": "ms",
       "sourceUrl": "https://raw.githubusercontent.com/Mistrustfully/insitux-ms/main/main.ix"
     },
@@ -44,6 +54,16 @@
       "prefix": "error",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/7fc358ea3f53db88aec0e70af8735b0d/raw",
       "offerHttp": true
+    },
+    {
+      "name": "Youtube Tutorial",
+      "prefix": "am-i-cool",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/252fab7daab64fd02774941e5c3be2e3/raw"
+    },
+    {
+      "name": "REPL example",
+      "prefix": "repl",
+      "sourceUrl": "https://gist.githubusercontent.com/insitux/88956318390f80fe02f794bd14c10ebf/raw/85c5020e9836f187498d9d1327c7edfcbdd974e8/repl.ix"
     }
   ]
 }

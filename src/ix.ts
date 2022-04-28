@@ -1,6 +1,6 @@
 import { InvokeOutput, invoker } from "insitux";
-import { Ctx, ExternalFunctions, Val, ValOrErr } from "insitux/dist/types";
-import { functionInvoker } from "insitux/dist/invoker";
+import { Ctx, ExternalFunctions, Val, ValOrErr } from "insitux/node/types";
+import { functionInvoker } from "insitux/node/invoker";
 import { saveState, stateForName, UserState } from "./user-state";
 
 type FuncCall = {

@@ -1,5 +1,5 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import { Val } from "insitux/dist/types";
+import { Val } from "insitux/node/types";
 
 export type UserState = {
   vars: {[key: string]: Val};
