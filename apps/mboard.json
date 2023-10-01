@@ -1,0 +1,503 @@
+{
+  "vars": {},
+  "output": "",
+  "env": {
+    "funcs": {
+      "page": {
+        "name": "page",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "<!DOCTYPE HTML>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <title>Insitu-x Message Board</title>\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css\"/>\n    <script src=\"https://cdn.jsdelivr.net/npm/insitux/dist/insitux.min.js\" type=\"module\"></script>\n    <script type=\"text/insitux\" src=\"https://insitux.github.io/ixvdom/ixvdom.ix\"></script>\n    <script type=\"text/insitux\" src=\"https://gist.githubusercontent.com/insitux/4eb62f4cf1ec8e83c393bb7d39f838ef/raw/message-board-client.ix\"></script>\n  </head>\n  <body class=\"p-5\">Loading...</body>\n</html>"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 6,
+              "col": 1
+            }
+          }
+        ]
+      },
+      "store-message": {
+        "name": "store-message",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "key",
+              "v": ":when"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 27
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "time"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 34
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 34
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "key",
+              "v": ":content"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 40
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "content",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 49
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "dict"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 26
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 26
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "messages",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 58
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "prepend"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 18
+            }
+          },
+          {
+            "typ": "var",
+            "value": "messages",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 9,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "handler": {
+        "name": "handler",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 2,
+            "text": "where",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 11
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 3,
+            "text": "channel",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 17
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 10
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 10
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "/mboard"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "GET"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 16
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 5
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 5
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "page"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 33
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 14,
+              "col": 33
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 22,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "/mboard"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "POST"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 16
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 5
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 5
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 7,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 6
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "input",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 51
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "store-message"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 37
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 37
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "ok"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 58
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "do"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 33
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 15,
+              "col": 33
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 10,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "/mboard/messages"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "GET"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 25
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 5
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 5
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 6
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "messages",
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 16,
+              "col": 32
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 4
+            }
+          },
+          {
+            "typ": "pop",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "bool",
+              "v": false
+            },
+            "errCtx": {
+              "invokeId": "1692145396539",
+              "line": 13,
+              "col": 4
+            }
+          }
+        ]
+      }
+    },
+    "vars": {
+      "messages": {
+        "t": "vec",
+        "v": []
+      }
+    },
+    "mocks": {}
+  },
+  "time": 1692145396539
+}

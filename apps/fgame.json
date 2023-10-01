@@ -1,0 +1,1792 @@
+{
+  "vars": {},
+  "output": "",
+  "env": {
+    "funcs": {
+      "help": {
+        "name": "help",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "\"!fgame new\" to start a new game.\n\"!fgame x\" where x is a number you want to test against the formula.\n\"!fgame reveal\" when you want to reveal the answer."
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 2,
+              "col": 3
+            }
+          }
+        ]
+      },
+      "new-game": {
+        "name": "new-game",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 5
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 29
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rand-int"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 20
+            }
+          },
+          {
+            "typ": "let",
+            "value": "type",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 4
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "#(rand-int 1 10)",
+              "length": 4,
+              "captures": [
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 27
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 1
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 38
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 10
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 40
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rand-int"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 29
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 29
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 44
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 10,
+              "col": 20
+            }
+          },
+          {
+            "typ": "dle",
+            "value": [
+              {
+                "name": "n0",
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "n1",
+                "position": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 4
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "#((rand-int 5) (vec + - * / rem))",
+              "length": 11,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 27
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "+"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 43
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "-"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 45
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "*"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 47
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "/"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 49
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rem"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 51
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 42
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 42
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 5
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 39
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rand-int"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 30
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 30
+            }
+          },
+          {
+            "typ": "exa",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 39
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 3
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 57
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 11,
+              "col": 20
+            }
+          },
+          {
+            "typ": "dle",
+            "value": [
+              {
+                "name": "o0",
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "o1",
+                "position": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "o2",
+                "position": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 4
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "type",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 20
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 0
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 15
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "x "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 22
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 27
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 13,
+              "col": 18
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 45,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 1
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 15
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 15
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 22
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " x"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 25
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 14,
+              "col": 18
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 38,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 15
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 9,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "("
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 22
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "o1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 26
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " x "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 29
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": ") "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 38
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 43
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 6,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 15,
+              "col": 18
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 27,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 3
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 15
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 9,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 15
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 22
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " ("
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 25
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "o1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 30
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 33
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 37
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " x)"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 40
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 6,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 16,
+              "col": 18
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 16,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 4
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 15
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 12,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "("
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 22
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "o1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 26
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " x "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 29
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": ") ("
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 38
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "o2",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 44
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 47
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "n1",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 51
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " x)"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 54
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 9,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 17,
+              "col": 18
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "pop",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "bool",
+              "v": false
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 12,
+              "col": 14
+            }
+          },
+          {
+            "typ": "let",
+            "value": "body",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "("
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 18
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "o0",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 22
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 25
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "body",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 29
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": ")"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 34
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 14
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 18,
+              "col": 14
+            }
+          },
+          {
+            "typ": "let",
+            "value": "func",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 9,
+              "col": 4
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "#(str \"The formula is \" func)",
+              "length": 4,
+              "captures": [
+                false,
+                true,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "func",
+                  "errCtx": {
+                    "invokeId": "1695462573184",
+                    "line": 20,
+                    "col": 39
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "The formula is "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 21
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "func",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 39
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 17
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 17
+            }
+          },
+          {
+            "typ": "var",
+            "value": "reveal",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 20,
+              "col": 4
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "(fn (var x %) (catch (eval func) \"An error occurred. Try something else.\"))",
+              "length": 9,
+              "captures": [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "func",
+                  "errCtx": {
+                    "invokeId": "1695462573184",
+                    "line": 21,
+                    "col": 37
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 11
+            }
+          },
+          {
+            "typ": "upa",
+            "value": 0,
+            "text": "%",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 21
+            }
+          },
+          {
+            "typ": "var",
+            "value": "x",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 15
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "func",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 37
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "eval"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 32
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 32
+            }
+          },
+          {
+            "typ": "cat",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 25
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "An error occurred. Try something else."
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 43
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "do"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 11
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 11
+            }
+          },
+          {
+            "typ": "var",
+            "value": "f",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 21,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "Guess the Formula! Estimated difficulty: "
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 8
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "type",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 57
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "inc"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 53
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 53
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "/5\n"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 63
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "help"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 71
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 71
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 23,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "handler": {
+        "name": "handler",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "input",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 26,
+              "col": 12
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "new"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 5
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 5
+            }
+          },
+          {
+            "typ": "sat",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "new-game"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 17
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 27,
+              "col": 17
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 18,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 26,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "reveal"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 5
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 5
+            }
+          },
+          {
+            "typ": "sat",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "reveal"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 17
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 28,
+              "col": 17
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 11,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 26,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "to-num"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 5
+            }
+          },
+          {
+            "typ": "sat",
+            "value": 6,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 5
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "input",
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 27
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "to-num"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 20
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "f"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 17
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 29,
+              "col": 17
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 26,
+              "col": 4
+            }
+          },
+          {
+            "typ": "pop",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 26,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "help"
+            },
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 30,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1695462573184",
+              "line": 30,
+              "col": 6
+            }
+          }
+        ]
+      }
+    },
+    "vars": {
+      "f": {
+        "t": "clo",
+        "v": {
+          "name": "(fn (var x %) (catch (eval func) \"An error occurred. Try something else.\"))",
+          "ins": [
+            {
+              "typ": "upa",
+              "value": 0,
+              "text": "%",
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 21
+              }
+            },
+            {
+              "typ": "var",
+              "value": "x",
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 15
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "str",
+                "v": "(rem (+ x 4) (/ 4 x))"
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 37
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "func",
+                "v": "eval"
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 32
+              }
+            },
+            {
+              "typ": "exe",
+              "value": 1,
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 32
+              }
+            },
+            {
+              "typ": "cat",
+              "value": 1,
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 25
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "str",
+                "v": "An error occurred. Try something else."
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 43
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "func",
+                "v": "do"
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 11
+              }
+            },
+            {
+              "typ": "exe",
+              "value": 2,
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 21,
+                "col": 11
+              }
+            }
+          ]
+        }
+      },
+      "reveal": {
+        "t": "clo",
+        "v": {
+          "name": "#(str \"The formula is \" func)",
+          "ins": [
+            {
+              "typ": "val",
+              "value": {
+                "t": "str",
+                "v": "The formula is "
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 20,
+                "col": 21
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "str",
+                "v": "(rem (+ x 4) (/ 4 x))"
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 20,
+                "col": 39
+              }
+            },
+            {
+              "typ": "val",
+              "value": {
+                "t": "func",
+                "v": "str"
+              },
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 20,
+                "col": 17
+              }
+            },
+            {
+              "typ": "exe",
+              "value": 2,
+              "errCtx": {
+                "invokeId": "1695461845363",
+                "line": 20,
+                "col": 17
+              }
+            }
+          ]
+        }
+      },
+      "x": {
+        "t": "num",
+        "v": 4
+      }
+    },
+    "mocks": {}
+  },
+  "time": 1695327359570
+}

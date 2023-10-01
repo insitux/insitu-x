@@ -1,6 +1,6 @@
 import { InvokeOutput, invoker } from "insitux";
-import { Ctx, ExternalFunctions, Val, ValOrErr } from "insitux/node/types";
-import { functionInvoker } from "insitux/node/invoker";
+import { Ctx, ExternalFunctions, Val, ValOrErr } from "insitux/dist/types";
+import { functionInvoker } from "insitux/dist/invoker";
 import { saveState, stateForName, UserState } from "./user-state";
 
 type FuncCall = {
@@ -15,9 +15,9 @@ const startTime = Date.now();
 
 function get(state: UserState, key: string): ValOrErr {
   if (!(key in state.vars)) {
-    return { kind: "err", err: `"${key}" not found` };
+    return { err: `"${key}" not found` };
   }
-  return { kind: "val", value: state.vars[key]! };
+  return state.vars[key]!;
 }
 
 function set(state: UserState, key: string, val: Val) {
@@ -26,16 +26,12 @@ function set(state: UserState, key: string, val: Val) {
 }
 
 const nullVal: Val = { t: "null", v: undefined };
-const nullRet: ValOrErr = { kind: "val", value: nullVal };
 
 function invoke(state: UserState, call: InvokeCall) {
   const functions: ExternalFunctions = {
     uptime: {
       definition: {},
-      handler: params => ({
-        kind: "val",
-        value: { t: "num", v: Date.now() - startTime },
-      }),
+      handler: params => ({ t: "num", v: Date.now() - startTime }),
     },
   };
   const ctx: Ctx = {
@@ -52,12 +48,12 @@ function invoke(state: UserState, call: InvokeCall) {
     functions,
     loopBudget: 1e4,
     rangeBudget: 1e4,
-    callBudget: 5e3,
+    callBudget: 1e4,
     recurBudget: 1e4,
   };
 
   return call.kind == "code"
-    ? invoker(ctx, call.code, undefined, true)
+    ? invoker(ctx, call.code)
     : functionInvoker(ctx, call.call.name, call.call.params, true);
 }
 

@@ -1,0 +1,6126 @@
+{
+  "vars": {},
+  "output": "",
+  "env": {
+    "funcs": {
+      "display": {
+        "name": "display",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "\n"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 25
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(join \" \")",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "join"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 37
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 42
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 35
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 35
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 47
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "map"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 31
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 31
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "join"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 1,
+              "col": 20
+            }
+          }
+        ]
+      },
+      "create-grid": {
+        "name": "create-grid",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 53
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "x",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 57
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 46
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 46
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "y",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 60
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 38
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 38
+            }
+          },
+          {
+            "typ": "var",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 28
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "display"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 65
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 2,
+              "col": 65
+            }
+          }
+        ]
+      },
+      "set-point": {
+        "name": "set-point",
+        "ins": [
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 28
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "len"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 24
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 24
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "dec"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 19
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 19
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "y",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast-"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 16
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 16
+            }
+          },
+          {
+            "typ": "let",
+            "value": "y-norm",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 4,
+              "col": 4
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 4
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(set-at (vec y-norm x) sym)",
+              "length": 9,
+              "captures": [
+                false,
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "y-norm",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 5,
+                    "col": 23
+                  }
+                },
+                {
+                  "typ": "npa",
+                  "value": 0,
+                  "text": "x",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 5,
+                    "col": 30
+                  }
+                },
+                {
+                  "typ": "npa",
+                  "value": 2,
+                  "text": "sym",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 5,
+                    "col": 33
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "set-at"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 15
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "y-norm",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 23
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "x",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 30
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 22
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 22
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 2,
+            "text": "sym",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 33
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 15
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 15
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 15
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 4
+            }
+          },
+          {
+            "typ": "var",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 5,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "plot": {
+        "name": "plot",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "val"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 26
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "fun",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 36
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "round"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 40
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "comp"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 31
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 31
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "juxt"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 21
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 21
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 52
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 0
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 57
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 57
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "len"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 59
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 59
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "range"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 63
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 63
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "map"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 16
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 16
+            }
+          },
+          {
+            "typ": "var",
+            "value": "traj",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 6
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "(fn (vec x y) (= \"W\" (-> grid (rem (- (dec (len grid)) y) 16) x)))",
+              "length": 18,
+              "captures": [
+                false,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "grid",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 8,
+                    "col": 53
+                  }
+                },
+                {
+                  "typ": "ref",
+                  "value": "grid",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 8,
+                    "col": 76
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 33
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "W"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 45
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 53
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 76
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "len"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 72
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 72
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "dec"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 67
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 67
+            }
+          },
+          {
+            "typ": "dpa",
+            "value": [
+              0,
+              1
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 83
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast-"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 64
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 64
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 16
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 86
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rem"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 59
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 59
+            }
+          },
+          {
+            "typ": "exa",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 76
+            }
+          },
+          {
+            "typ": "dpa",
+            "value": [
+              0,
+              0
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 90
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 90
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast="
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 43
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 43
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "traj",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 95
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "take-until"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 21
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 8,
+              "col": 21
+            }
+          },
+          {
+            "typ": "var",
+            "value": "traj-wall",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 7,
+              "col": 6
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "(fn (vec x y) (set-point x y sym))",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                true,
+                true,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "npa",
+                  "value": 1,
+                  "text": "sym",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 9,
+                    "col": 35
+                  }
+                },
+                {
+                  "typ": "val",
+                  "value": {
+                    "t": "str",
+                    "v": "set-point"
+                  },
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 9,
+                    "col": 21
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 11
+            }
+          },
+          {
+            "typ": "dpa",
+            "value": [
+              0,
+              0
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 31
+            }
+          },
+          {
+            "typ": "dpa",
+            "value": [
+              0,
+              1
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 33
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "sym",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "set-point"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 21
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 21
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "traj-wall",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 41
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "map"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 9,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "display"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 10,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 10,
+              "col": 6
+            }
+          }
+        ]
+      },
+      "game-start": {
+        "name": "game-start",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "x-len",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 13,
+              "col": 18
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "y-len",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 13,
+              "col": 24
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "create-grid"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 13,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 13,
+              "col": 6
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "#(rand-int x-len)",
+              "length": 3,
+              "captures": [
+                true,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "npa",
+                  "value": 0,
+                  "text": "x-len",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 14,
+                    "col": 45
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 34
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "x-len",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 45
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rand-int"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 36
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 36
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 52
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 27
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 27
+            }
+          },
+          {
+            "typ": "dle",
+            "value": [
+              {
+                "name": "rnd-tx",
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "rnd-ty",
+                "position": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 14,
+              "col": 6
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "rnd-tx",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 15,
+              "col": 16
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "rnd-ty",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 15,
+              "col": 23
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "T"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 15,
+              "col": 30
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "set-point"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 15,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 15,
+              "col": 6
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "(fn y x (set-point x y \"W\"))",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                false,
+                true,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "val",
+                  "value": {
+                    "t": "str",
+                    "v": "set-point"
+                  },
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 16,
+                    "col": 20
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 12
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "x",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 30
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "y",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 32
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "W"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 34
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "set-point"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 20
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 20
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "rnd-tx",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 53
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "dec"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 49
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 49
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 2,
+            "text": "min-wall-len",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 71
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 3,
+            "text": "max-wall-len",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 84
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "rand-int"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 62
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 62
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "repeat"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 41
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 41
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "xmap"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 16,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 97
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 17,
+              "col": 17
+            }
+          },
+          {
+            "typ": "var",
+            "value": "bullet",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 17,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "display"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 18,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 18,
+              "col": 6
+            }
+          }
+        ]
+      },
+      "parabolic-y-vel": {
+        "name": "parabolic-y-vel",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "u",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 6
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "a",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 16
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 3.141592653589793
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 21
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 180
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 24
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast/"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 19
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 19
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 14
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "sin"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 9
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 9
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 21,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "parabolic-x-vel": {
+        "name": "parabolic-x-vel",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "u",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 6
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "a",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 16
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 3.141592653589793
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 21
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 180
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 24
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast/"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 19
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 19
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 14
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "cos"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 9
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 9
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 23,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "parabolic-y": {
+        "name": "parabolic-y",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "velocity",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 26
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "angle",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "parabolic-y-vel"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 10
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 10
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 3,
+            "text": "t",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 42
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 7
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 7
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 0.5
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 48
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 2,
+            "text": "gravity",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 52
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 3,
+            "text": "t",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 64
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 66
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "**"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 61
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 61
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "*"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 46
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast-"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 25,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "parabolic-throw": {
+        "name": "parabolic-throw",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "velocity",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 16
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "angle",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 25
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 2,
+            "text": "gravity",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 31
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 3,
+            "text": "x-coord",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 42
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "velocity",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 67
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "angle",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 76
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "parabolic-x-vel"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 51
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 51
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast/"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 40
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 40
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "parabolic-y"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 27,
+              "col": 4
+            }
+          }
+        ]
+      },
+      "shoot": {
+        "name": "shoot",
+        "ins": [
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(map (replace (char-code (- bullet 2)) \" \"))",
+              "length": 16,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 21
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "map"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 21
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(replace (char-code (- bullet 2)) \" \")",
+              "length": 11,
+              "captures": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "bullet",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 30,
+                    "col": 48
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 26
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "replace"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 26
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "bullet",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 48
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 55
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "fast-"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 46
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "char-code"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 35
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 59
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 26
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 26
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 26
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 21
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 21
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 21
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "map"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 16
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 6
+            }
+          },
+          {
+            "typ": "var",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 30,
+              "col": 6
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(parabolic-throw vel angl 9.81)",
+              "length": 7,
+              "captures": [
+                true,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": [
+                {
+                  "typ": "ref",
+                  "value": "parabolic-throw",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 31,
+                    "col": 13
+                  }
+                },
+                {
+                  "typ": "npa",
+                  "value": 0,
+                  "text": "vel",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 31,
+                    "col": 29
+                  }
+                },
+                {
+                  "typ": "npa",
+                  "value": 1,
+                  "text": "angl",
+                  "errCtx": {
+                    "invokeId": "1694723048985",
+                    "line": 31,
+                    "col": 33
+                  }
+                }
+              ]
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 11
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "parabolic-throw",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 13
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "vel",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 29
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "angl",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 33
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 9.81
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 38
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 11
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 11
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 11
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "bullet",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 55
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "char-code"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 45
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 45
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "plot"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 31,
+              "col": 6
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "bullet",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 32,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "inc"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 32,
+              "col": 18
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 32,
+              "col": 6
+            }
+          },
+          {
+            "typ": "var",
+            "value": "bullet",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 32,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "T"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 25
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "grid",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 19
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "flatten"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 11
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 11
+            }
+          },
+          {
+            "typ": "exa",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 19
+            }
+          },
+          {
+            "typ": "if",
+            "value": 6,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "display"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 36
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 36
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "\nMiss!"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 45
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 31
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 31
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 6
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "display"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 62
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 62
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "\nYou win!"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 71
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 57
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 33,
+              "col": 57
+            }
+          }
+        ]
+      },
+      "handler": {
+        "name": "handler",
+        "ins": [
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "contents",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 36
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(split \" \")",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "split"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 52
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "exa",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 46
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 0
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 63
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 1
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 65
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 2
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 67
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(skip 3)",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 76
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "skip"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 76
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 3
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 81
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 76
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 76
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 76
+            }
+          },
+          {
+            "typ": "clo",
+            "value": {
+              "name": "@(join \" \")",
+              "length": 5,
+              "captures": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "derefs": []
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 85
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "join"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 85
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 90
+            }
+          },
+          {
+            "typ": "upa",
+            "value": -1,
+            "text": "args",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 85
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "..."
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 85
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 85
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "comp"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 70
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 70
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "juxt"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 58
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 58
+            }
+          },
+          {
+            "typ": "exa",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 63
+            }
+          },
+          {
+            "typ": "dle",
+            "value": [
+              {
+                "name": "command",
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "vel",
+                "position": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "name": "angl",
+                "position": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "name": "rest",
+                "position": [
+                  0,
+                  3
+                ]
+              }
+            ],
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 36,
+              "col": 4
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "command",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 11
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "vel",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 19
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "angl",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 23
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "rest",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 28
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "vec"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 10
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 10
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "print"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 37,
+              "col": 4
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "command",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 10
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "new"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 10
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 7,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 10
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 32
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 15
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 38
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 4
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 41
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "num",
+              "v": 8
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 43
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "game-start"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 24
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 4,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 39,
+              "col": 24
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 26,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "shoot"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 10
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 9,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 10
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "vel",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 38
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "to-num"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 31
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 31
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "angl",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 51
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "to-num"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 44
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 44
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "shoot"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 24
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 40,
+              "col": 24
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 15,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "run"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 10
+            }
+          },
+          {
+            "typ": "mat",
+            "value": 10,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 10
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "vel",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 35
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 39
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "angl",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 43
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": " "
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 48
+            }
+          },
+          {
+            "typ": "ref",
+            "value": "rest",
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 52
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "strn"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 30
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 30
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "eval"
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 24
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 41,
+              "col": 24
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 3,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 4
+            }
+          },
+          {
+            "typ": "pop",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "bool",
+              "v": false
+            },
+            "errCtx": {
+              "invokeId": "1694723048985",
+              "line": 38,
+              "col": 4
+            }
+          }
+        ]
+      }
+    },
+    "vars": {
+      "grid": {
+        "t": "vec",
+        "v": [
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "T"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "a"
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "a"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "str",
+                "v": "a"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": "W"
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              },
+              {
+                "t": "str",
+                "v": " "
+              }
+            ]
+          }
+        ]
+      },
+      "bullet": {
+        "t": "num",
+        "v": 98
+      },
+      "traj": {
+        "t": "vec",
+        "v": [
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 0
+              },
+              {
+                "t": "num",
+                "v": 0
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 1
+              },
+              {
+                "t": "num",
+                "v": 2
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 2
+              },
+              {
+                "t": "num",
+                "v": 3
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 3
+              },
+              {
+                "t": "num",
+                "v": 5
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 4
+              },
+              {
+                "t": "num",
+                "v": 7
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 5
+              },
+              {
+                "t": "num",
+                "v": 8
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 6
+              },
+              {
+                "t": "num",
+                "v": 10
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 7
+              },
+              {
+                "t": "num",
+                "v": 12
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 8
+              },
+              {
+                "t": "num",
+                "v": 13
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 9
+              },
+              {
+                "t": "num",
+                "v": 15
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 10
+              },
+              {
+                "t": "num",
+                "v": 17
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 11
+              },
+              {
+                "t": "num",
+                "v": 18
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 12
+              },
+              {
+                "t": "num",
+                "v": 20
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 13
+              },
+              {
+                "t": "num",
+                "v": 21
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 14
+              },
+              {
+                "t": "num",
+                "v": 23
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 15
+              },
+              {
+                "t": "num",
+                "v": 24
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 16
+              },
+              {
+                "t": "num",
+                "v": 26
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 17
+              },
+              {
+                "t": "num",
+                "v": 27
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 18
+              },
+              {
+                "t": "num",
+                "v": 29
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 19
+              },
+              {
+                "t": "num",
+                "v": 30
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 20
+              },
+              {
+                "t": "num",
+                "v": 32
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 21
+              },
+              {
+                "t": "num",
+                "v": 33
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 22
+              },
+              {
+                "t": "num",
+                "v": 34
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 23
+              },
+              {
+                "t": "num",
+                "v": 36
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 24
+              },
+              {
+                "t": "num",
+                "v": 37
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 25
+              },
+              {
+                "t": "num",
+                "v": 38
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 26
+              },
+              {
+                "t": "num",
+                "v": 40
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 27
+              },
+              {
+                "t": "num",
+                "v": 41
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 28
+              },
+              {
+                "t": "num",
+                "v": 42
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 29
+              },
+              {
+                "t": "num",
+                "v": 44
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 30
+              },
+              {
+                "t": "num",
+                "v": 45
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 31
+              },
+              {
+                "t": "num",
+                "v": 46
+              }
+            ]
+          }
+        ]
+      },
+      "traj-wall": {
+        "t": "vec",
+        "v": [
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 0
+              },
+              {
+                "t": "num",
+                "v": 0
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 1
+              },
+              {
+                "t": "num",
+                "v": 2
+              }
+            ]
+          },
+          {
+            "t": "vec",
+            "v": [
+              {
+                "t": "num",
+                "v": 2
+              },
+              {
+                "t": "num",
+                "v": 3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mocks": {}
+  },
+  "time": 1692733746856
+}

@@ -1,0 +1,37 @@
+{
+  "vars": {},
+  "output": "",
+  "env": {
+    "funcs": {
+      "handler": {
+        "name": "handler",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "version"
+            },
+            "errCtx": {
+              "invokeId": "1689889118915",
+              "line": 2,
+              "col": 4
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 0,
+            "errCtx": {
+              "invokeId": "1689889118915",
+              "line": 2,
+              "col": 4
+            }
+          }
+        ]
+      }
+    },
+    "vars": {},
+    "mocks": {}
+  },
+  "time": 1689889118915
+}

@@ -110,7 +110,7 @@ source must be ["Discord" "web"]`);
 
 //initBasicEndpoint(app);
 
-const port = 3000;
+const port = 8888;
 app.listen(port, () => {
   console.log(`server started on port ${port}`);
 });

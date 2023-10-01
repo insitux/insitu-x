@@ -1,0 +1,132 @@
+{
+  "vars": {},
+  "output": "",
+  "env": {
+    "funcs": {
+      "handler": {
+        "name": "handler",
+        "ins": [
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "penis"
+            },
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 16
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 0,
+            "text": "input",
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 24
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "substr?"
+            },
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 8
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 8
+            }
+          },
+          {
+            "typ": "if",
+            "value": 5,
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 4
+            }
+          },
+          {
+            "typ": "npa",
+            "value": 1,
+            "text": "who",
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 4,
+              "col": 10
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": ", you are banned."
+            },
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 4,
+              "col": 14
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "func",
+              "v": "str"
+            },
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 4,
+              "col": 6
+            }
+          },
+          {
+            "typ": "exe",
+            "value": 2,
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 4,
+              "col": 6
+            }
+          },
+          {
+            "typ": "jmp",
+            "value": 1,
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 3,
+              "col": 4
+            }
+          },
+          {
+            "typ": "val",
+            "value": {
+              "t": "str",
+              "v": "This message is okay."
+            },
+            "errCtx": {
+              "invokeId": "1690345541792",
+              "line": 5,
+              "col": 5
+            }
+          }
+        ]
+      }
+    },
+    "vars": {},
+    "mocks": {}
+  },
+  "time": 1690345536711
+}

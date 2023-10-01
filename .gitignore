@@ -1,4 +1,4 @@
 node_modules/
 .*/
+*.js
 out/
-*.code-workspace

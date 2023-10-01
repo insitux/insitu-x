@@ -18,6 +18,16 @@
       "sourceUrl": "https://gist.githubusercontent.com/phunanon/1e0b75f9619f67c4a9d91e8593bb5016/raw"
     },
     {
+      "name": "Chess",
+      "prefix": "chess",
+      "sourceUrl": "https://fordarthur.github.io/chess-ix/discord-chess.ix"
+    },
+    {
+      "name": "Ballistics",
+      "prefix": "ballistics",
+      "sourceUrl": "https://fordarthur.github.io/ballistics-ix/ballistics.ix"
+    },
+    {
       "name": "Formula Guessing Game",
       "prefix": "fgame",
       "sourceUrl": "https://gist.githubusercontent.com/insitux/ee5d48c12fe35708e8ffcfbf67c14d52/raw/formula-guessing-game.ix"

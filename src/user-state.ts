@@ -1,10 +1,10 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import { Val } from "insitux/node/types";
+import { Val } from "insitux/dist/types";
 
 export type UserState = {
   vars: {[key: string]: Val};
   output: string;
-  env: { funcs: {}; vars: {}; lets: [] };
+  env: { funcs: {}; vars: {}; mocks: {} };
   time: number;
 };
 
@@ -21,7 +21,7 @@ export function stateForName(name: string): UserState {
     const state = <UserState>{
       vars: {},
       output: "",
-      env: { funcs: {}, vars: {}, lets: [] },
+      env: { funcs: {}, vars: {}, mocks: {} },
       time: new Date().getTime(),
     };
     saveState(name, state);
